@@ -20,8 +20,12 @@ mov reg, address
 mov address, reg
 load reg, address - alternative writing of load through mov, loads data from memory at address / альтернативное написание загрузки через mov, загружает данные из памяти по адресу
 load reg, reg
+loadb reg, address - побайтовая загрузка
+loadb reg, reg
 store address, reg - alternative way of saving using mov, saves data from memory at the address /  альтернативное написание сохранения через mov, сохраняет данные из памяти по адресу
 store reg, reg
+storeb reg, address - побайтовая выгрузка
+storeb reg, reg
 pop imm - x86 pop
 pop reg 
 pop address
@@ -90,8 +94,6 @@ ret - return from func
 iret - return from interrupts
 sti - on Io interrupts
 cli - off Io interrupts
-sci - set call invoke interrupts mode
-cci - clear call invoke interrupts mode
 lidt reg - load idt address 
 lidt imm
 srci - set flag return from stack register on iret
