@@ -108,8 +108,6 @@ setrr reg, imm - get system register value
 setrr reg, reg
 callsys imm - call, but set ss(RING) in 0
 callsys reg
-setbus imm - Выбор шины IO/Choosing the IO bus
-setbus reg
 atomIoLC - req to IO bus, to loc
 atomIoUL - unlock bus
 debaghlta - only for chip debagger. Performs HLT if the debug address is reached/ Выполняет HLT если достигнут адрес отладки. Только для отладки ядра
